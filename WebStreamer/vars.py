@@ -15,7 +15,7 @@ class Var(object):
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', None))     
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
-    OWNER_ID = int(getenv('OWNER_ID', None)) #TODO
+    OWNER_ID = int(getenv('OWNER_ID', 1756677968) #TODO
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME'))
